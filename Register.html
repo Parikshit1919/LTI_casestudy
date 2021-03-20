@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <link rel="Stylesheet" href="Register.css" type="text/css"/>
+    <script>
+        function vali()
+        {
+            var a=document.getElementById('uname').value;
+            if(a=="")
+            {
+                alert("Username cannot be empty");
+            }
+           /* var p=document.getElementById('pwd').value;
+            if(p=="")
+            {
+                alert("Password Required");
+            }
+            var em=/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.]+$/;
+            var text=document.getElementById("email").value;
+            if(em.test(text)==false)
+            {
+                alert("Incorrect format");
+            }
+            var cit=document.getElementById('city').value;
+            if(cit=="")
+            {
+                alert("Enter City name");
+            }
+           var n= /^[0-9]{10}$/;
+            var text1=document.getElementById('mob').value;
+            if(n.test(text1)==false)
+            {
+                alert("Mobile no must be 10 digit.");
+            }
+*/
+
+        }
+        function vali1()
+        {
+            var p=document.getElementById('pwd').value;
+            if(p=="")
+            {
+                alert("Password Required");
+            }
+        }
+        function vali2()
+        {
+            var em=/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.]+$/;
+            var text=document.getElementById("email").value;
+            if(em.test(text)==false)
+            {
+                alert("Incorrect format");
+            }
+        }
+        function vali3()
+        {
+            var cit=document.getElementById('city').value;
+            if(cit=="")
+            {
+                alert("Enter City name");
+            }
+        }
+        function vali4()
+        {
+            var n= /^[0-9]{10}$/;
+            var text1=document.getElementById('mob').value;
+            if(n.test(text1)==false)
+            {
+                alert("Mobile no must be 10 digit.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Welcome to LTI </h1>
+    <nav class="topnav">
+      <img src ="lti.jpg" id="logo"/>
+        <a href="index.html">Home</a>
+        <a href="Register.html">Register</a>
+        <a href="login.html">Login</a>
+      
+    </nav>
+    <div>
+        <h2 align="center">Register to explore amazing career opportunities</h3>
+        <form>
+            <table align="center">
+                <tr><td><label for="uname"><b>Username</b></label></td></tr>
+                <tr><td> <input type="text" id="uname"  placeholder="Enter Username" /></td></tr>
+                <tr><td><label for="pwd"><b>Password</label></b></label></td></tr>
+                <tr><td> <input type="password" id="pwd"  placeholder="Enter Password" /></td></tr>
+                <tr><td><label for="email"><b>Email Address</b></label></td></tr>
+                <tr><td> <input type="text" id="email"  placeholder="Enter Email Address" /></td></tr>
+                <tr><td><label for="city"><b>City</b></label></td></tr>
+                <tr><td> <input type="text" id="city"  placeholder="Enter City" /></td></tr>
+                <tr><td><label for="mob"><b>Mobile No.</b></label></td></tr>
+                <tr><td> <input type="text" id="mob"  placeholder="Enter Mobile Number" /></td></tr>
+                <tr><td class="but" align="center"><button onclick="vali(); vali1();vali2(); vali3();vali4()">Register</button></td></tr>
+            
+            </table>
+            
+            
+        </form>
+        
+    </div>
+    <footer class="foot" align="center">
+        &#169 2020 Larsen & Tubro Infotech Limited
+      </footer>
+    
+</body>
+</html>

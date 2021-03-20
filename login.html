@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <link rel="Stylesheet" href="login.css" type="text/css"/>
+  <script>
+     function vali()
+        {
+            var a=document.getElementById('uname').value;
+            if(a=="")
+            {
+                alert("Username cannot be empty");
+            }
+        }
+     function vali1()
+        {
+            var p=document.getElementById('pwd').value;
+            if(p=="")
+            {
+                alert("Password Required");
+            }
+        }
+  </script>
+</head>
+<body>
+    <h1 align="center">Welcome to LTI </h1>
+    <nav class="topnav">
+      <img src ="lti.jpg" id="logo"/>
+        <a href="index.html">Home</a>
+        <a href="Register.html">Register</a>
+        <a href="login.html">Login</a>
+      
+    </nav>
+    <div>
+      <h2 align="center">Login to a world of opportunities</h2>
+      <form>
+          <table align="center">
+              <tr><td><label for="uname"><b>Username</b></label></td></tr>
+              <tr><td> <input type="text" id="uname" name="uname" placeholder="Enter Username" /></td></tr>
+              <tr><td><label for="pwd"><b>Password</label></b></label></td></tr>
+              <tr><td> <input type="password" id="pwd" name="pwd" placeholder="Enter Password" /></td></tr>
+              <tr><td class="but" align="center" onclick="vali();vali1()"><button>Login</button></td></tr>
+              <tr><td><input type="checkbox" name="remember" id="chk"><font id="fn">Remember me</td></tr>
+            </table>
+              
+              <div class="fin">
+                <button type="button" class="btn" >Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+      </form>
+      </div>
+      <footer class="foot" align="center">
+        &#169 2020 Larsen & Tubro Infotech Limited
+      </footer>
+    
+      
+     
+</body>
+</html>
